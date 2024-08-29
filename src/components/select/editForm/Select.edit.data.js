@@ -94,7 +94,7 @@ export default [
   },
   {
     type: 'textarea',
-    as: 'json',
+    /*as: 'json',*/ //Temp fix: comment this to allow array input to this textarea
     editor: 'ace',
     weight: 10,
     input: true,

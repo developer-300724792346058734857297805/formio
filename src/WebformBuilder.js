@@ -463,11 +463,11 @@ export default class WebformBuilder extends Component {
       data: {
         title: 'Data',
         weight: 30
-      },
-      premium: {
-        title: 'Premium',
-        weight: 40
-      }
+      }//,
+      //premium: {
+      //  title: 'Premium',
+      //  weight: 40
+      //}
     };
   }
 

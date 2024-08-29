@@ -233,9 +233,6 @@ export default [
     label: 'Editor Settings',
     tooltip: 'Enter the WYSIWYG editor JSON configuration.',
     key: 'wysiwyg',
-    customDefaultValue(value, component, row, data, instance) {
-      return instance ? instance.wysiwygDefault : '';
-    },
     conditional: {
       json: {
         or: [
@@ -254,6 +251,10 @@ export default [
         ]
       }
     },
-    weight: 417
+    weight: 417,
+    //Temp fix: move here to solve unexpected invalid option for "custom type"
+    customDefaultValue(value, component, row, data, instance) {
+      return instance ? instance.wysiwygDefault : '';
+    },
   }
 ];

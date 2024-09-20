@@ -11,6 +11,9 @@ export default {
   resources: {
     en: {
       translation: fastCloneDeep(enTranslation)
+    },
+    eng: {
+      translation: fastCloneDeep(enTranslation)
     }
   }
 };

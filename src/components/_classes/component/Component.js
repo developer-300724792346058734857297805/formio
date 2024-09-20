@@ -3513,12 +3513,7 @@ export default class Component extends Element {
   }
 
   get validationValue() {
-    //PR-- Temporarily - Modify the verification number part.
-    if(this.component['type'] === 'number'){
-      return Number(this.dataValue);
-    }else{
       return this.dataValue;
-    }
   }
 
   isEmpty(value = this.dataValue) {

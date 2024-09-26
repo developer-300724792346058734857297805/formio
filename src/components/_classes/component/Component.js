@@ -3400,6 +3400,13 @@ export default class Component extends Element {
     }
     processOneSync(processContext);
     this._errors = this.interpolateErrors(processContext.scope.errors);
+
+    for (let i = 0; i < this._errors.length; i++) {
+      if (this._errors[i] && this._errors[i].component.validate.customMessage !== "") {
+        this._errors[i].level = 'error';
+      }
+    }
+
     return this._errors;
   }
 
